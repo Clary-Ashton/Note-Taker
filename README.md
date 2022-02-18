@@ -14,4 +14,5 @@ A note taking App where the User can write and save notes. This App is built usi
 
 ## License
 
-[MIT License](./License)
+This application is licensed with an [MIT License](./LICENSE)
+
