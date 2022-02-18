@@ -2,7 +2,7 @@
 ## Table of Contents
 
 * [Description](#description)
-* [Deployed Link](#deloyed link)
+* [Deployed Link](#deloyed-link)
 
 
 
