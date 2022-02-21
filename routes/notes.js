@@ -5,7 +5,7 @@ const util = require('util');
 const uuid = require('../helpers/uuid');
 
 //Get route for retrieving all notes
-router.get("/", (req, res) =>{
+router.get("/notes", (req, res) =>{
 console.info(`${req.method} request received.`);
 readFromFile(`./db/db.json`)
 .then((data) => res.json(JSON.parse(data)))
@@ -14,7 +14,7 @@ readFromFile(`./db/db.json`)
 
 
 //Post route for submitting a new note
-router.post('/', (req, res) =>{
+router.post('/notes', (req, res) =>{
     console.info(`${req.method} request received to add a new note.`);
 
     const { title, text } = req.body;
@@ -36,7 +36,7 @@ router.post('/', (req, res) =>{
 })
 
 //Delete route for deletting a note
-router.delete('/:id', (req, res) =>{
+router.delete('/notes/:id', (req, res) =>{
 console.info(`${req.method} request received.`);
 readFromFile('./db/db.json')
 .then((data) =>{
