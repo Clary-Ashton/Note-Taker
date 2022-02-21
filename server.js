@@ -22,7 +22,7 @@ res.sendFile(path.join(__dirname, './public/notes.html'))
 
 //Get * return return the index.html file.
 app.get('*', (req, res) =>
-res.sendFile(path.join(__dirname, './public/index.html'))
+res.sendFile(path.join(__dirname, 'public', 'index.html'))
 );
 
 
