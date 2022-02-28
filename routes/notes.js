@@ -41,6 +41,7 @@ console.info(`${req.method} request received.`);
 readFromFile('./db/db.json')
 .then((data) =>{
     const notes = JSON.parse(data);
+    const filteredNotes = notes.filter(note => note.id !== req.params.id)
     res.json(filteredNotes);
     writeToFile('./db/db.json', filteredNotes);
 })
