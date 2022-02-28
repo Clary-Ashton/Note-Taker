@@ -3,7 +3,7 @@
 
 * [Description](#description)
 * [Deployed Link](#deloyed-link)
-* [Screen Shot](#screen-shot)
+* [Screen Shots](#screen-shots)
 * [License](#license)
 
 
